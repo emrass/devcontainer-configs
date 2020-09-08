@@ -1,0 +1,15 @@
+{
+	"name": "Node.js & TypeScript",
+	"image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-12",
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/zsh"
+	},
+	"extensions": [
+		"dbaeumer.vscode-eslint",
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "editorconfig.editorconfig"
+	],
+	"forwardPorts": [3000],
+	"postCreateCommand": "yarn install",
+	"remoteUser": "node"
+}
